@@ -1,0 +1,102 @@
+/* Leave these first two lines alone, unless you want a different font */
+*{box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+
+/* Add your CSS code below this line */
+
+html {
+    background: slateblue;
+}
+body {
+    background: white;
+    color: #333; /* font color, specifically */
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 20px auto;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+/* Text and headings */
+p {
+    line-height: 150%;
+}
+h1, h2, h3 {
+    text-align: center;
+    font-weight: normal;
+}
+ul, ol {
+    line-height: 150%;
+}
+
+
+
+
+/* Page navigation */
+nav ul {
+    /* Rules for the list itself, removing the bullet dots and aligning it to the center */
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+nav li {
+    /* inline-block means "blocks that stack, but next to each other" */
+    display: inline-block;
+    padding: 0 10px;
+}
+nav a {
+    /* Mostly self-explanatory, but notice the white border on the bottom of the links? */
+    color: slateblue;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 0 10px;
+    /* border-bottom: solid 2px white; */
+}
+
+
+
+
+/* specific rules for the page footer */
+footer {
+    margin-top: 50px;
+    font-size: 75%;
+    text-align: center;
+}
+
+
+/* The hr makes a "horizontal rule", or a big line across the page */
+hr {
+    border-bottom: solid 1px slateblue;
+}
+
+
+
+
+
+/* Utility classes for extra cool things I might need */
+.strike {
+    /* adds a line through the text */
+    text-decoration: line-through;
+    font-style: italic;
+    color: #777;
+}
+.selected {
+    /* used for the selected page */
+    border-bottom: solid 2px slateblue;
+}
+.image-fit {
+    width: 100%;
+}
+.text-center {
+    text-align: center;
+}
+.chef-image {
+    display: block;
+    margin: 0 auto;
+}
